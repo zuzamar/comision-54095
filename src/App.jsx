@@ -1,9 +1,15 @@
+import { Home } from "./components/home/Home.jsx";
+import { ItemListContainer } from "./components/itemListContainer/ItemListContainer.jsx";
+import { NavBar } from "./components/navBar/NavBar.jsx";
 
 function App() {
-
   return (
-    <h1>Primer pre-entrega</h1>
-  )
+    <div>
+      <NavBar />
+      <ItemListContainer greeting="¡Bienvenidos a:" />
+      <Home />
+    </div>
+  );
 }
 
-export default App
+export default App;

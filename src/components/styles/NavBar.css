@@ -1,0 +1,23 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(168, 228, 223);
+    font-family: inherit;
+    color: darkcyan;
+}
+
+ul li {
+    list-style-type: none;
+
+}
+
+ul li a {
+    font-family: inherit;
+    color: darkcyan;
+    text-decoration: none;
+
+}
