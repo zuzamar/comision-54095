@@ -1,0 +1,8 @@
+.item-list-container{
+    display: flex;
+    flex-direction: column;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+}

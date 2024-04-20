@@ -5,19 +5,23 @@
     gap: 2rem;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(168, 228, 223);
+    background-color: #e9a3d0;
     font-family: inherit;
-    color: darkcyan;
+    color: #73284d;
 }
-
+ul{
+    display: flex;
+    gap: 1rem;
+}
 ul li {
     list-style-type: none;
 
 }
 
-ul li a {
+ul li a { 
+    
     font-family: inherit;
-    color: darkcyan;
+    color: #73284d;
     text-decoration: none;
 
 }

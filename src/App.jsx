@@ -1,15 +1,24 @@
-import { Home } from "./components/home/Home.jsx";
-import { ItemListContainer } from "./components/itemListContainer/ItemListContainer.jsx";
-import { NavBar } from "./components/navBar/NavBar.jsx";
+import { ThemeProvider } from "@mui/material";
+import { ItemListContainer } from "./components/pages/itemListContainer/ItemListContainer.jsx";
+import { miTema } from "./components/themeContent.js";
+import { CounterContainer } from "./components/common/counter/CounterContainer.jsx";
+import { Layout } from "./components/layout/Layout.jsx";
+import { CartContainer } from "./components/pages/cart/CartContainer.jsx";
 
 function App() {
   return (
-    <div>
-      <NavBar />
-      <ItemListContainer greeting="¡Bienvenidos a:" />
-      <Home />
-    </div>
-  );
+    <ThemeProvider theme={miTema}>
+      
+      <Layout>
+      
+        <ItemListContainer greeting="¡Bienvenidos a Mi Perfumería" />
+        <CartContainer />
+        <CounterContainer />
+      
+      </Layout>
+            
+    </ThemeProvider>
+      );
 }
 
 export default App;

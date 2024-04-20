@@ -1,0 +1,11 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e9a3d0;
+    font-family: inherit;
+    color: #73284d;
+}
