@@ -2,9 +2,6 @@ import { Button, Card, CardContent, CardMedia, Typography, CardActions, } from '
 import "./ProductCard.css";
 import { Link } from "react-router-dom";
 
-
-
-
 const ProductCard = ({title, description, price, img, id}) => {
 
   return (
@@ -26,7 +23,7 @@ const ProductCard = ({title, description, price, img, id}) => {
           </Typography>
         </CardContent>
       <CardActions>
-        <Link to={`/itemDetail/${id}`}>
+        < Link to={`/itemDetail/${id}`}>
           <Button size="small" >Ver detalle</Button>
         </Link>
       </CardActions>
