@@ -1,15 +1,15 @@
-import { Footer } from "./footer/Footer"
-import { NavBar } from "./navBar/NavBar"
+import { Footer } from "./footer/Footer.jsx";
+import { NavBar } from "./navBar/NavBar.jsx";
+import { Outlet } from "react-router-dom";
 
-export const Layout = ({children}) => {
+export const Layout = () => {
   return (
     <div>
-        <NavBar/>
-
-            {children}
-
-        <Footer/>
-
+      <NavBar />
+      <div style={{minHeight: "calc(100vh - 150px)"}}> 
+        <Outlet />
+      </div>
+      <Footer />
     </div>
-  )
-}
+  );
+};

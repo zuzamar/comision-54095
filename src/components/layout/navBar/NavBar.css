@@ -1,4 +1,4 @@
-.navbar {
+.containerNavbar {
     display: flex;
     flex-direction: row;
     padding: 1rem;
@@ -8,16 +8,29 @@
     background-color: #e9a3d0;
     font-family: inherit;
     color: #73284d;
-}
-ul{
+  }
+  
+  .brand {
+    font-family: inherit;
+    color: #73284d;
+    text-decoration: none;
+  }
+  
+  .categories {
     display: flex;
     gap: 1rem;
-}
-ul li {
+  }
+  
+  ul {
     list-style-type: none;
-
-}
-
+  }
+  
+  ul a {
+    font-family: inherit;
+    color: #73284d;
+    text-decoration: none;
+  }
+  
 ul li a { 
     
     font-family: inherit;

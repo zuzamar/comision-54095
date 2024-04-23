@@ -1,13 +1,14 @@
 .product-card {
-    display: flex;
+    display: flex;  
     flex-direction: column;
-    width: 100%;
-    height: 33rem;
-    justify-content: center;
-    align-items: center;
-    font-family: "inherit";
-    font-size: 1rem;
-    color: #892b5a;
-    padding: 1rem;
+    gap: 40px;
+    margin: 12px;
     text-align: center;
+}
+
+.product-card img {
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    object-fit: cover;
 }

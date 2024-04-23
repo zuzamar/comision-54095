@@ -1,4 +1,4 @@
-import { Cart } from "./Cart"
+import  Cart  from "./Cart.jsx"
 
 export const CartContainer = () => {
     
@@ -7,9 +7,10 @@ export const CartContainer = () => {
     let productosAgregados = []
 
 
-    return <Cart productosAgregados= {productosAgregados} />
+    return <Cart productosAgregados= {productosAgregados} />;
 
-}
+};
+
 
 
 
