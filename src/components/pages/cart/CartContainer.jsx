@@ -1,15 +1,31 @@
-import  Cart  from "./Cart.jsx"
+import { useContext } from "react";
+import { CartContext } from "../../../context/CartContext";
+import Cart from "./Cart";
 
-export const CartContainer = () => {
+const CartContainer = () => {
     
-    console.log("aca va la logica")
-    
-    let productosAgregados = []
+    const {cart, clearCart, deleteById, getTotalPrice } =
+    useContext(CartContext);
+        let total = getTotalPrice ();
+
+    return (
+    <Cart 
+        cart={cart}
+        clearCart={clearCart}
+        deleteById={deleteById} 
+        total={total}
+        />
+    );
+}
+
+export default CartContainer 
 
 
-    return <Cart productosAgregados= {productosAgregados} />;
 
-};
+
+
+
+
 
 
 

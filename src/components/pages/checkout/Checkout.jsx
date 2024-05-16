@@ -1,7 +1,20 @@
 import { Button, TextField } from "@mui/material";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { CartContext } from "../../../context/CartContext";
+import { addDoc, collection, doc, updateDoc } from "firebase/firestore";
+import { db } from "../../../fireBaseConfig";
+
 
 export const Checkout = () => {
+
+  const { cart, getTotalPrice, clearCart } = useContext(CartContext);
+  
+
+  const [orderId, setOrderId] = useState(null);
+
+  let total = getTotalPrice();
+
+
   const [info, setInfo] = useState({
     nombre: "",
     telefono: "",
@@ -15,26 +28,45 @@ export const Checkout = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    let obj = {
+      buyer: info,
+      items: cart,
+      total: total,
+    };
 
-    console.log(info);
+    let ordersCollection = collection(db, "orders");
+    addDoc(ordersCollection, obj)
+      .then((res) => setOrderId(res.id))
+      .catch((error) => console.log(error));
+
+      cart.forEach((product) => {
+        let refDoc = doc(db, "products", product.id);
+        updateDoc(refDoc, { stock: product.stock - product.quantity });
+      });
+  
+      clearCart();
+
   };
 
   return (
     <div style={{ padding: "100px" }}>
+        {orderId ? (
+        <h1>su id es: {orderId} </h1>
+      ) : (
       <form onSubmit={handleSubmit}>
         <TextField
           variant="outlined"
           type="text"
           label="Nombre"
           onChange={handleChange}
-          name="nombre"
+          name="name"
         />
         <TextField
           variant="outlined"
           type="text"
           label="Telefono"
           onChange={handleChange}
-          name="telefono"
+          name="phone"
         />
         <TextField
           variant="outlined"
@@ -45,6 +77,7 @@ export const Checkout = () => {
         />
         <Button variant="contained" type="submit">enviar</Button>
       </form>
+      )}
     </div>
   );
 };

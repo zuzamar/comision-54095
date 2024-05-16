@@ -1,16 +1,5 @@
 export let products =[
     {
-    id: 1,
-    title:"Gucci Bloom",
-    price: 6490,
-    stock: 12,
-    description: "Es una fragancia floral contemporánea con notas de jazmín, tuberosa y lirio, diseñada para evocar la esencia de un jardín floreciente.",
-    category: "mujer",
-    img: "https://res.cloudinary.com/dxrgl9cxx/image/upload/v1713673526/htozso3q1e2hzzd8suyn.jpg"
-    },
-
-    {
-        id: 2,
         title:" Good Girl Blush",
         price:5450,
         stock:10,
@@ -20,7 +9,6 @@ export let products =[
     },
 
     {
-        id: 3,
         title: "Euphoria Blosom",
         price: 6250,
         stock: 15,
@@ -30,7 +18,6 @@ export let products =[
     },
 
     {
-    id: 4,  
     title: " Pure XS",
     price: 5950,
     stock: 12,
@@ -38,18 +25,8 @@ export let products =[
     category: "mujer",
     img: "https://res.cloudinary.com/db9m1nxwm/image/upload/v1713675121/amjgeeraactrsqi8jrfb.jpg"
     },
+    
     {
-        id: 5,
-        title: "Acqua di gio",
-        price: 6350,
-        stock: 9,
-        description: "Acqua di Gio es una fragancia clásica y refrescante de Giorgio Armani, con notas marinas, cítricas y amaderadas que evocan la frescura y la libertad del mar.",
-        category: "hombres",
-        img: "https://res.cloudinary.com/dxrgl9cxx/image/upload/v1713673199/cwmwjedd1pmuveh84e47.jpg"
-    },
-
-    {
-        id: 6,
         title: "Eternity for man",
         price: 5350,
         stock:10,
@@ -59,7 +36,6 @@ export let products =[
     },
 
     {
-        id:7,
         title: "Eros",
         price: 5650,
         stock: 11,
@@ -69,7 +45,6 @@ export let products =[
     },
 
     {
-        id: 8,
         title: "Sauvage",
         price: 6750,
         stock: 10,

@@ -15,7 +15,7 @@ const ProductCard = ({title, description, price, img, id}) => {
         <Typography gutterBottom variant="h5" component="div" color={"secondary.altern4"}>
             {title}
           </Typography>
-          <Typography variant="body2" color="primary.altern2">
+          <Typography variant="body2" color={"primary.altern2"}>
             {description}
           </Typography>
           <Typography gutterBottom variant="h5" component="div" color={"secondary.altern4"}>
@@ -24,7 +24,7 @@ const ProductCard = ({title, description, price, img, id}) => {
         </CardContent>
       <CardActions>
         < Link to={`/itemDetail/${id}`}>
-          <Button size="small" >Ver detalle</Button>
+          <Button size="small" >Ver detalle </Button>
         </Link>
       </CardActions>
     </Card>
@@ -32,6 +32,5 @@ const ProductCard = ({title, description, price, img, id}) => {
 };
 
 export default ProductCard;
-
 
 
