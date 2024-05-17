@@ -24,7 +24,7 @@ const ProductCard = ({title, description, price, img, id}) => {
         </CardContent>
       <CardActions>
         < Link to={`/itemDetail/${id}`}>
-          <Button size="small" >Ver detalle </Button>
+          <Button size="small" color="secondary" sx={{ backgroundColor: 'primary.altern1' }} >Ver detalle </Button>
         </Link>
       </CardActions>
     </Card>

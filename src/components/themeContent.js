@@ -10,7 +10,8 @@ export const miTema = createTheme({
     },
     secondary: {
       main: "#a6306d",
-      altern4: "#73284d"
+      altern4: "#73284d",
+      altern5: "#c04287"
     }
   }
 });

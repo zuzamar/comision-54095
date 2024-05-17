@@ -143,11 +143,11 @@ const ItemListContainer = () => {
 
     return (
     <>
-        <h1> Bienvenidos</h1>
+        <h1 style={{ display: "flex", gap: "40px", fontFamily: "Arial, sans-serif", color: "#73284d", fontSize: "32px" }}> Bienvenidos</h1>
         {items.length > 0 ? (
         <ItemList items={items} error={error} />
         ) : (
-        <h1> cargando...</h1>
+        <h1 style={{ display: "flex", gap: "40px", fontFamily: "Arial, sans-serif", color: "#73284d", fontSize: "32px" }}> cargando...</h1>
         )}
         
     </>

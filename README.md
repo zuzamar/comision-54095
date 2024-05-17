@@ -26,7 +26,6 @@ Mi Perfumería es una tienda en línea especializada en la venta de perfumes. El
 - **Vercel**: Plataforma de despliegue para aplicaciones web..
 
 ## Clona mi repositorio
-
 Clona el repositorio:
 
     ```

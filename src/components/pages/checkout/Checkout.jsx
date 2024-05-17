@@ -49,33 +49,38 @@ export const Checkout = () => {
   };
 
   return (
-    <div style={{ padding: "100px" }}>
+    <div style={{ padding: "100px", background: "#fdf0f8"}}>
         {orderId ? (
-        <h1>su id es: {orderId} </h1>
+        <h1 style={{ fontFamily: "Pacifico, cursive", background: "#fdf0f8", color: "#73284d"}}> su id es: {orderId} </h1>
       ) : (
       <form onSubmit={handleSubmit}>
-        <TextField
-          variant="outlined"
+        <TextField 
+          variant="filled"
           type="text"
           label="Nombre"
           onChange={handleChange}
           name="name"
+          sx={{ margin: "10px",
+          }}
+          
         />
         <TextField
-          variant="outlined"
+          variant="filled"
           type="text"
           label="Telefono"
           onChange={handleChange}
           name="phone"
+          sx={{ margin: "10px"}}
         />
         <TextField
-          variant="outlined"
+          variant="filled"
           type="text"
           label="Email"
           onChange={handleChange}
           name="email"
+          sx={{ margin: "10px"}}
         />
-        <Button variant="contained" type="submit">enviar</Button>
+        <Button variant="contained" type="submit" sx={{ fontFamily: "Pacifico, cursive", color: "#73284d" }}>enviar</Button>
       </form>
       )}
     </div>
